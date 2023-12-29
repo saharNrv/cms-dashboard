@@ -4,10 +4,18 @@ import './Header.css'
 export default function Header() {
   return (
     <div className='header'>
+     <div className="header-left">
+      <div className="header-infos">
+        <img src="/img/amin1.jpeg" alt="admin img" className='header-cover' />
+        <div>
+          <h2 className='admin-name'>sahar nouri</h2>
+          <h3 className='admin-job'>web developer</h3>
+        </div>
+      </div>
      <div className="header-right">
         
      </div>
-     <div className="header-left"></div>
+     </div>
     </div>
   );
 }
