@@ -1,8 +1,9 @@
 import React from 'react';
+import './Product.css'
 
 export default function Products() {
   return (
-    <div>
+    <div className='pro'>
       Productsnnn
     </div>
   );

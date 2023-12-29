@@ -1,7 +1,9 @@
 .sidebar{
-    width: 15%;
+    flex: 1;
     background-color: var(--primery);
     height: 100vh;
+    position: fixed;
+    top: 0;
 }
 .sidebar-title{
     text-align: center;

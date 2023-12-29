@@ -9,12 +9,13 @@ export default function App() {
 const routers=useRoutes(router)
   
   return (
-    <div>
-      <div className='app-wrap'>
+    <>
       <SideBar/>
+      <div className='app-wrap'>
+      <Header/>
         {routers}
       </div>
       
-    </div>
+    </>
   );
 }
