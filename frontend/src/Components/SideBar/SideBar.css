@@ -1,0 +1,33 @@
+.sidebar{
+    width: 15%;
+    background-color: var(--primery);
+    height: 100vh;
+}
+.sidebar-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+
+}
+.sidebar-list{
+    margin-top: 20px;
+}
+.sidebar-list a{
+    padding: 20px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    /* margin-bottom: 20px; */
+    transition: all 200ms ease-in;
+}
+.sidebar-list a:hover{
+    background-color: #0344a5;
+}
+.sidebar-list a.active{
+    background-color: #0344a5;
+}

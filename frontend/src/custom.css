@@ -1,0 +1,18 @@
+@import './reset.css';
+
+
+:root{
+    --primery:#0066ff;
+    --white:#ffffff;
+    --white-50:#f0f0f0;
+
+}
+body{
+    background:var(--white-50);
+    font-family: sans-serif;
+} 
+a{
+    text-decoration: none;
+   
+}
+/* 00b38f */
