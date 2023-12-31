@@ -3,7 +3,7 @@ import './Header.css'
 
 export default function Header() {
   return (
-    <div className='header'>
+    <div className='header py-10 px-3'>
      <div className="header-left">
       <div className="header-infos">
         <img src="/img/amin1.jpeg" alt="admin img" className='header-cover' />

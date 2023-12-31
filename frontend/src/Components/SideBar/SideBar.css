@@ -1,6 +1,6 @@
 .sidebar{
     flex: 1;
-    background-color: var(--primery);
+    /* background-color: var(--primery); */
     height: 100vh;
     position: fixed;
     top: 0;
@@ -28,8 +28,8 @@
     transition: all 200ms ease-in;
 }
 .sidebar-list a:hover{
-    background-color: #0344a5;
+    background-color: rgb(15 118 110);
 }
 .sidebar-list a.active{
-    background-color: #0344a5;
+    background-color: rgb(15 118 110);
 }
