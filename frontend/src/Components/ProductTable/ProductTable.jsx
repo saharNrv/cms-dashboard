@@ -30,7 +30,7 @@ export default function ProductTable() {
                 </tr>
             </tbody>
         </table>
-      
+     
     </div>
   );
 }
