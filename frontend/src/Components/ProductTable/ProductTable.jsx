@@ -2,6 +2,7 @@ import React from 'react';
 import './ProductTable.css'
 
 export default function ProductTable() {
+    
   return (
     <div className=' m-5'>
 
