@@ -1,4 +1,4 @@
-## Hi
+## Hi 👋
 
 To run this project, first run the backEnd in the terminal as follows: 
 <h2>node server.js</h2>
