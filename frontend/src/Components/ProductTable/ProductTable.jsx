@@ -4,6 +4,7 @@ import Message from '../Message/Message';
 import DeleteModal from '../DeleteModal/DeleteModal';
 import EditeModal from '../EditeModal/EditeModal';
 import DetaileModal from '../DetaileModal/DetaileModal';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 export default function ProductTable({getAllProducts,allProducts}) {
@@ -18,11 +19,13 @@ export default function ProductTable({getAllProducts,allProducts}) {
     const[newProductColors,setNewProductColors]=useState('')
     const[newProductSales,setNewProductSales]=useState('')
     const[newProductImg,setNewProductImg]=useState('')
+    const[detailProduct,setDetailProduct]=useState({})
 
   
 
     const cancleModal=()=>setIsShowDeleteModal(false)
     const onHide=()=>setIsShowEditeModal(false)
+    const onHideDetail=()=>setIsShowDetailModal(false)
     const submitModal=()=>{
 
         fetch(`http://localhost:8000/api/products/${productID}`,{
@@ -31,6 +34,7 @@ export default function ProductTable({getAllProducts,allProducts}) {
           .then(resualt=>{
               setIsShowDeleteModal(false)
               getAllProducts()
+              toast.success('The product has been successfully removed')
           })
 
     }
@@ -109,7 +113,10 @@ export default function ProductTable({getAllProducts,allProducts}) {
                                 Edite
                             </button>
                             <button className='bg-teal-500 w-[80px] mx-2 p-2 text-white rounded-md'
-                            onClick={()=>setIsShowDetailModal(true)}
+                            onClick={()=>{
+                                setIsShowDetailModal(true)
+                                setDetailProduct(product)
+                            }}
                             >
                                 Detaile
                             </button>
@@ -182,23 +189,43 @@ export default function ProductTable({getAllProducts,allProducts}) {
                 </EditeModal>
             )
         }
-        {
-            isShowDetailModal&&(
-                <DetaileModal>
-                 <table className='cms-table'>
-                    <thead>
-                        <tr>
-                            <th>name</th>
-                            <th>price</th>
-                            <th>popularity</th>
-                            <th>color</th>
-                        </tr>
-                    </thead>
-                 </table>
-                    
-                </DetaileModal>
-            )
-        }
+       {
+        isShowDetailModal &&
+        <DetaileModal onHideDetail={onHideDetail}>
+
+            <table className='cms-table'>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>popularity</th>
+                        <th>color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{detailProduct.title}</td>
+                        <td>{detailProduct.price}</td>
+                        <td>{detailProduct.popularity}%</td>
+                        <td>{detailProduct.colors}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </DetaileModal>
+       }
+        <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+         />
      
     </div>
   );

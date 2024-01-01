@@ -23,10 +23,15 @@
     margin-top: 10px;
     background-color: var(--white);
     border-radius: 20px;
-    width: 100%;
+    /* width: 100%; */
 }
 .cms-table tr{
     text-align: center;
+}
+.cms-table th{
+    color: teal;
+    font-weight: bold;
+    font-size: 20px;
 }
 .cms-table th,.cms-table td{
     padding: 20px;
