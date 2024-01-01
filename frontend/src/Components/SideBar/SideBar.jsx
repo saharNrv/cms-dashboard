@@ -9,7 +9,7 @@ import { FaUsers } from "react-icons/fa";
 export default function SideBar() {
   return (
     <div className='sidebar bg-teal-500'>
-        <h1 className='sidebar-title'>My Dashboard</h1>
+        <h1 className='sidebar-title drop-shadow-[0_0px_12px_rgba(0,0,0)]'>My Dashboard</h1>
         <ul className="sidebar-list">
             <li className="sidebar-item">
                  

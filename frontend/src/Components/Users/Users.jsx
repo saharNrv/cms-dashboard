@@ -85,7 +85,7 @@ fetch(`http://localhost:8000/api/users/${userID}`,{
 
 
   return (
-    <div className='m-5'>
+    <div className='m-5 pt-[90px]'>
       <h1 className='text-2xl text-teal-500 font-bold my-10'>Users</h1>
 
       {

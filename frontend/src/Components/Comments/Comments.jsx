@@ -91,7 +91,7 @@ getAllComments()
  }
 
   return (
-    <div className='m-10'>
+    <div className='m-10 pt-[90px]'>
       <h1 className='text-teal-600 text-2xl font-bold mb-10'>Comments</h1>
 
       {

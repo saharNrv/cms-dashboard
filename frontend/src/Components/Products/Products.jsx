@@ -20,7 +20,7 @@ function getAllProducts(){
     })
 }
   return (
-    <div className=''>
+    <div className='pt-[90px]'>
     
      <AddNewProduct getAllProducts={getAllProducts}/>
      <ProductTable allProducts={allProducts} getAllProducts={getAllProducts}/>

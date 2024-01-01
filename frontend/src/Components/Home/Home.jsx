@@ -19,7 +19,7 @@ export default function Home() {
   },[])
 
   return (
-    <div className='home'>
+    <div className='home py-[90px]'>
      <Chart grid chartData={chartData} dataKey='count' />
      <div className='m-5 mt-10 flex justify-between'>
       <UserTable/>
