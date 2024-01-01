@@ -121,8 +121,8 @@ getAllComments()
               >see comment
               </button>
               </td>
-              <td>2023/04/16</td>
-              <td>11:17</td>
+              <td>{comment.date}</td>
+              <td>{comment.hour}</td>
               <td>
                 <button className='bg-teal-500 p-2 mr-2 rounded-md'>response</button>
                 {
