@@ -130,7 +130,7 @@ export default function ProductTable({getAllProducts,allProducts}) {
         </table>
         {
             isShowDeleteModal&&(
-                <DeleteModal submitModal={submitModal} cancleModal={cancleModal}/>
+                <DeleteModal submitModal={submitModal} cancleModal={cancleModal} title='Are You Sure Delete This Product?'/>
             )
         }
         {

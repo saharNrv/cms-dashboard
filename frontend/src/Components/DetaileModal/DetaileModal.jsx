@@ -16,7 +16,7 @@ export default function DetaileModal({children,onHideDetail}) {
 
 
   return (
-    <div className='modal-parent active'>
+    <div className='modal-parent active '>
             {children}
  
     </div>
