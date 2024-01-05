@@ -85,12 +85,12 @@ fetch(`http://localhost:8000/api/users/${userID}`,{
 
 
   return (
-    <div className='m-5 pt-[90px]'>
-      <h1 className='text-2xl text-teal-500 font-bold my-10'>Users</h1>
+    <div className='m-5 pt-[90px] bg-white-50 dark:bg-slate-800'>
+      <h1 className='text-2xl text-teal-500 dark:text-white font-bold my-10'>Users</h1>
 
       {
         allUsers.length ?(
-          <table className="cms-table w-full">
+          <table className="cms-table bg-white dark:bg-teal-800 dark:text-white w-full">
         <thead>
           <tr>
             <th>Name</th>

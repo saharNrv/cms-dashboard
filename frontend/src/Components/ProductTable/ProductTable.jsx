@@ -68,7 +68,7 @@ export default function ProductTable({getAllProducts,allProducts}) {
     
     <div className=' m-5'>
 
-        <table className='product-table'>
+        <table className='product-table dark:bg-teal-800 dark:text-white' >
             <thead>
                 <tr className='table-heading-tr'>
                     <th>Cover</th>

@@ -11,8 +11,8 @@ export default function ProductTableHome() {
              })
     },[])
   return (
-    <div className='bg-red overflow-y-scroll h-[400px] bg-white rounded-2xl shadow'>
-      <table className='cms-table w-[600px]'>
+    <div className='bg-red overflow-y-scroll h-[400px]   dark:text-white rounded-2xl shadow'>
+      <table className='cms-table w-[600px] bg-white dark:bg-teal-800'>
         <thead>
             <tr>
                 <th>img</th>

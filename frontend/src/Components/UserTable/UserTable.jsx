@@ -14,7 +14,7 @@ export default function UserTable() {
 
   return (
     <div>
-      <table className='cms-table w-[550px] shadow'>
+      <table className='cms-table w-[550px] shadow bg-white dark:bg-teal-800 dark:text-white'>
         <thead>
             <tr>
                 <th>#</th>

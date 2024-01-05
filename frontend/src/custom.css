@@ -11,6 +11,10 @@ body{
     background:var(--white-50);
     font-family: sans-serif;
 } 
+body.dark{
+    background-color: #1e293b;
+    color: #fff;
+}
 a{
     text-decoration: none;
    

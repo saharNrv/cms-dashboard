@@ -91,12 +91,12 @@ getAllComments()
  }
 
   return (
-    <div className='m-10 pt-[90px]'>
-      <h1 className='text-teal-600 text-2xl font-bold mb-10'>Comments</h1>
+    <div className='m-10 pt-[90px] dark:bg-slate-800'>
+      <h1 className='text-teal-600 dark:text-white text-2xl font-bold mb-10'>Comments</h1>
 
       {
         allComments.length?(
-          <table className='cms-table w-full mt-10'>
+          <table className='cms-table bg-white dark:bg-teal-800 dark:text-white w-full mt-10'>
         <thead>
           <tr>
             <th>UserName</th>

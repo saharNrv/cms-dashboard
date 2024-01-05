@@ -58,33 +58,33 @@ export default function AddNewProduct({getAllProducts}) {
   return (
     <div className='addProduct p-5'>
 
-        <h1 className='text-[20px] text-teal-600 font-bold'>Add New Product</h1>
+        <h1 className='text-[20px] text-teal-600 dark:text-white font-bold'>Add New Product</h1>
         <div className='form-wrap mt-8 '>
-            <form className='form  bg-white p-8 rounded-md grid grid-cols-2 gap-4 items-center'>
+            <form className='form  bg-white dark:bg-teal-800 p-8 rounded-md grid grid-cols-2 gap-4 items-center'>
                 <div className='addProduct-input-wrap relative '>
                   <MdDriveFileRenameOutline className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder='Name' className='w-full pl-10 py-[10px] outline-none rounded-md' 
+                    <input type="text" placeholder='Name' className='w-full pl-10 py-[10px] outline-none rounded-md ' 
                     value={newProductTitle}
                     onChange={(e)=>setNewProductTitle(e.target.value)}
                     />
                 </div>
                 <div className='addProduct-input-wrap relative '>
                   <HiCurrencyDollar className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder=' Price' className='w-full pl-10 py-[10px] outline-none rounded-md'
+                    <input type="text" placeholder=' Price' className='w-full pl-10 py-[10px] outline-none rounded-md '
                     value={newProductPrice}
                     onChange={(e)=>setNewProductPrice(e.target.value)}
                     />
                 </div>
-                <div className='addProduct-input-wrap relative '>
+                <div className='addProduct-input-wrap relative  '>
                   <PiArrowsCounterClockwiseBold className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder='Count' className='w-full pl-10 py-[10px] outline-none rounded-md'
+                    <input type="text" placeholder='Count' className='w-full pl-10 py-[10px] outline-none rounded-md '
                     value={newProductCount}
                     onChange={e=>setNewProductCount(e.target.value)}
                     />
                 </div>
                 <div className='addProduct-input-wrap relative '>
                   <FaImage className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder='Img' className='w-full pl-10 py-[10px] outline-none rounded-md'
+                    <input type="text" placeholder='Img' className='w-full pl-10 py-[10px] outline-none rounded-md '
                     value={newProductImg}
                     onChange={(e)=>setNewProductImg(e.target.value)}
 
@@ -92,21 +92,21 @@ export default function AddNewProduct({getAllProducts}) {
                 </div>
                 <div className='addProduct-input-wrap relative '>
                   <MdFavoriteBorder className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder='Populare' className='w-full pl-10 py-[10px] outline-none rounded-md'
+                    <input type="text" placeholder='Populare' className='w-full pl-10 py-[10px] outline-none rounded-md '
                     value={newProductPopularity}
                     onChange={(e)=>setNewProductPopularity(e.target.value)}
                     />
                 </div>
                 <div className='addProduct-input-wrap relative '>
                   <IoIosColorPalette className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder='Color' className='w-full pl-10 py-[10px] outline-none rounded-md' 
+                    <input type="text" placeholder='Color' className='w-full pl-10 py-[10px] outline-none rounded-md ' 
                     value={newProductColors}
                     onChange={(e)=>setNewProductColors(e.target.value)}
                     />
                 </div>
                 <div className='addProduct-input-wrap relative '>
                   <FcSalesPerformance className='absolute size-[22px] top-2 left-2'/>
-                    <input type="text" placeholder='Sale' className='w-full pl-10 py-[10px] outline-none rounded-md'
+                    <input type="text" placeholder='Sale' className='w-full pl-10 py-[10px] outline-none rounded-md '
                     value={newProductSales}
                     onChange={(e)=>setNewProductSales(e.target.value)}
                     />

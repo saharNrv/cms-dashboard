@@ -1,6 +1,6 @@
 .product-table{
     margin-top: 30px;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     width: 100%;
     border-radius: 10px;
 }
